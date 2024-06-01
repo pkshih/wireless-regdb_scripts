@@ -1,0 +1,60 @@
+Andorra	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Argentina	Adopted	5925-7125 MHz
+Australia	Adopted Considering	5925-6425 MHz 6425-7125 MHz
+Austria	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Bahrain	Adopted	5925-6425 MHz
+Belgium	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Brazil	Adopted	5925-7125 MHz
+CEPT	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Canada	Adopted	5925-7125 MHz
+Chile	Adopted	5925-6425 MHz
+Colombia	Adopted	5925-7125 MHz
+Costa Rica	Adopted	5925-7125 MHz
+Dominican Republic	Adopted	5925-7125 MHz
+Egypt	Considering	5925-6425 MHz
+El Salvador	Adopted	5925-7125 MHz
+European Union	Adopted	5925-6425 MHz  (*only adopting 5945-6425)
+Faroe Islands	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+France	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Germany	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Gibraltar	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Guatemala	Adopted	5925-7125 MHz
+Hong Kong	Adopted Considering	5925-6425 MHz 6425-7125 MHz
+Iceland	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Ireland	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Isle of Man	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Japan	Adopted Considering	5925-6425 MHz 6425-7125 MHz
+Jordan	Adopted	5925-6425 MHz
+Kenya	Adopted	5925-6425 MHz
+Liechtenstein	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Luxembourg	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Macau S.A.R.	Adopted	5925-6425 MHz
+Malaysia	Adopted	5925-6425 MHz
+Mauritius	Adopted	5925-6425 MHz
+Mexico	Adopted	5925-6425 MHz
+Monaco	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Morocco	Adopted	5925-6425 MHz
+Namibia	Adopted	5925-6425 MHz
+Netherlands	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+New Zealand	Adopted	5925-6425 MHz
+Norway	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Oman	Considering	5925-6425 MHz
+Pakistan	Adopted	5945-6425 MHz
+Peru	Adopted	5925-7125 MHz
+Portugal	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Qatar	Adopted Considering	5925-6425 MHz 6425-7125 MHz
+Russian Federation	Adopted	5925-6425 MHz
+Saudi Arabia	Adopted	5925-7125 MHz
+Singapore	Adopted	5925-6425 MHz
+South Africa	Adopted	5925-6425 MHz
+South Korea	Adopted	5925-7125 MHz
+Spain	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Switzerland	Adopted Considering	5945-6425 MHz 6425-7125 MHz
+Taiwan	Adopted	5925-6425 MHz
+Thailand	Adopted	5925-6425 MHz
+Togo	Adopted	5925-6425 MHz
+Tunisia	Considering	5925-6425 MHz
+Turkey	Adopted	5925-6425 MHz
+United Arab Emirates	Adopted	5925-6425 MHz
+United Kingdom	Adopted Considering  	5945-6425 MHz 6425-7125 MHz
+United States	Adopted	5925-7125 MHz

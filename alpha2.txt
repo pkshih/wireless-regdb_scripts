@@ -120,6 +120,7 @@ KM	Comoros
 KN	Saint Kitts and Nevis
 KP	Korea, Democratic People's Republic of
 KR	Korea, Republic of
+KR	South Korea
 KW	Kuwait
 KY	Cayman Islands
 KZ	Kazakhstan
@@ -145,6 +146,7 @@ MK	North Macedonia
 ML	Mali
 MM	Myanmar
 MN	Mongolia
+MO	Macau S.A.R.
 MO	Macao
 MP	Northern Mariana Islands
 MQ	Martinique
@@ -164,6 +166,7 @@ NF	Norfolk Island
 NG	Nigeria
 NI	Nicaragua
 NL	Netherlands, Kingdom of the
+NL	Netherlands
 NO	Norway
 NP	Nepal
 NR	Nauru
@@ -223,14 +226,18 @@ TM	Turkmenistan
 TN	Tunisia
 TO	Tonga
 TR	Türkiye
+TR	Turkey
 TT	Trinidad and Tobago
 TV	Tuvalu
 TW	Taiwan, Province of China
+TW	Taiwan
 TZ	Tanzania, United Republic of
 UA	Ukraine
 UG	Uganda
+UK	United Kingdom
 UM	United States Minor Outlying Islands
 US	United States of America
+US	United States
 UY	Uruguay
 UZ	Uzbekistan
 VA	Holy See
