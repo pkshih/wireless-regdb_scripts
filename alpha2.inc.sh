@@ -23,3 +23,5 @@ done < $alpha2_file
 
 #echo ${alpha2_to_full["US"]}
 
+HAS_ALPHA2=1
+

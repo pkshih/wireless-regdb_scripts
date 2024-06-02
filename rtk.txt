@@ -1,0 +1,185 @@
+Argentina	Y
+Bolivia	Y
+Brazil	Y
+Chile	Y
+Colombia	Y
+Costa Rica	Y
+Ecuador	N
+El Salvador	Y
+Guatemala	Y
+Honduras	Y
+Mexico	Y
+Nicaragua	N
+Panama	N
+Paraguay	N
+Peru	Y
+United States of America	Y
+Uruguay	N
+Venezuela	N
+Puerto Rico	N
+Rep. Dominicana	N
+Austria	Y
+Belgium	Y
+Cyprus	Y
+Czech Republic	Y
+Denmark	Y
+Estonia	Y
+Finland	Y
+France	Y
+Germany	Y
+Greece	Y
+Hungary	Y
+Iceland	Y
+Ireland	Y
+Italy	Y
+Latvia	Y
+Liechtenstein	Y
+Lithuania	Y
+Luxembourg	Y
+Malta	Y
+Monaco	Y
+Netherlands	Y
+Norway	Y
+Poland	Y
+Portugal	Y
+Slovak Republic	Y
+Slovenia	Y
+Spain	Y
+Sweden	Y
+Switzerland	Y
+United Kingdom	Y
+Albania	N
+Azerbaijan	Y
+Bahrain	Y
+Bosnia and Herzegovina	N
+Bulgaria	Y
+Croatia	Y
+Egypt	N
+Ghana	Y
+Iraq	N
+Israel	Y
+Jordan	Y
+Kazakhstan (CU)	N
+Kenya	Y
+Kuwait	Y
+Kyrgyzstan	Y
+Lebanon	Y
+Lesotho	N
+Macedonia	N
+Morocco	Y
+Mozambique	N
+Namibia	N
+Nigeria	N
+Oman	N
+Qatar	Y
+Romania	Y
+Russia, gost (CU)	N
+Russia, fac	N
+Saudi Arabia	Y
+Senegal	N
+Serbia	Y
+Montenegro	N
+South Africa	Y
+Turkey	Y
+ukraine	N
+United Arab Emirates	Y
+Yemen	N
+Zimbabwe	N
+Bangladesh	N
+Cambodia	N
+China	N
+Hong Kong	Y
+India	N
+Indonesia	N
+South Korea	Y
+Malaysia	Y
+Pakistan	N
+Philippines	N
+Singapore	Y
+Sri Lanka	N
+Taiwan	Y
+Thailand	Y
+Vietnam	N
+Australia/NZ	Y
+Papua New Guinea	Y
+Canada	Y
+Japan - Telec	Y
+Japan - Jate	Y
+CB report	N
+Jamaica	Y
+Netherlands Antilles	Y
+Trinidad and Tobago	N
+Tunisia	N
+Algeria	N
+Angola	N
+Armenia	Y
+Aruba	N
+Bahamas	Y
+Barbados	Y
+Belarus	N
+Benin	N
+Bermuda	Y
+Botswana	Y
+Brunei	N
+Burkina Faso	Y
+Burundi	Y
+Cameroon	N
+Cape Verde	N
+Central African Republic	N
+Chad	Y
+Comoros	Y
+Congo, Democratic Republic of the. Zaire	N
+Congo, Republic of the	N
+Cote d'Ivoire	N
+Djibouti	Y
+Equatorial Guinea	Y
+Eritrea	N
+Ethiopia	N
+Fiji	N
+French Southern and Antarctic Lands (FR Southern Territories)	N
+Gabon	N
+Gambia	Y
+Georgia	N
+Gibraltar (UK)	N
+Greenland (Denmark)	N
+Guadeloupe (France)	N
+Guam (USA)	N
+Guinea	Y
+Guinea-Bissau	N
+Haiti	Y
+Liberia	N
+Macau	N
+Madagascar	Y
+Malawi	N
+Mali	N
+Martinique (France)	N
+Mauritania	N
+Mauritius	Y
+Mayotte (France)	N
+Moldova	Y
+Nepal	N
+Niger	N
+Rwanda	N
+Sao Tome and Principe	N
+Seychelles	N
+Sierra Leone	Y
+Somalia	N
+Swaziland	N
+Tajikistan	Y
+Tanzania	N
+Togo	Y
+Turkmenistan	N
+Uganda	N
+Uzbekistan	Y
+Western Sahara	N
+Zambia	N
+Saint Lucia	Y
+Antigua and Barbuda	Y
+Belize	N
+Dominica	N
+Grenada	Y
+Guyana	N
+Mongolia	Y
+Saint Kitts and Nevis	Y
+Suriname	Y
+laso	Y

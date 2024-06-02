@@ -10,6 +10,7 @@ declare -A list_6g
 
 . $dir/alpha2.inc.sh 
 . $dir/wfa.inc.sh
+. $dir/rtk.inc.sh
 
 ### check if wfa country missed
 
@@ -53,12 +54,12 @@ done < db.txt
 
 [ "$PBAR" == "1" ] && echo ""
 
-echo "country	db.txt	wfa	country full"
-echo "-------	------	---	------------"
+echo "country	db.txt	wfa	rtk	country full"
+echo "-------	------	---	---	------------"
 
 for key in "${!list_6g[@]}"; do
 	country_full=${alpha2_to_full["$key"]}
-	echo "$key	${list_6g[$key]}	${wfa_6g[$country_full]}	$country_full"
+	echo "$key	${list_6g[$key]}	${wfa_6g[$country_full]}	${rtk_6g[$key]}	$country_full"
 done | sort
 
 
