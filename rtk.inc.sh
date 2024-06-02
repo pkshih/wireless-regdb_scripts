@@ -20,7 +20,7 @@ while read line; do
 
 	_country_alpha2="${full_to_alpha2[$_country]}"
 	if [ "$_country_alpha2" == "" ]; then
-		echo "rtk unknwon country $_country"
+		echo -e "\n\trtk unknwon country $_country"
 		_country_alpha2="99"
 	fi
 

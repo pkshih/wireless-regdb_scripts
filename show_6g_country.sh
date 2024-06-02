@@ -12,15 +12,6 @@ declare -A list_6g
 . $dir/wfa.inc.sh
 . $dir/rtk.inc.sh
 
-### check if wfa country missed
-
-for country_full in "${!wfa_6g[@]}"; do
-	alpha2=${full_to_alpha2[$country_full]}
-	[ "$alpha2" == "" ] && echo "unknown WFA country: $country_full"
-done
-
-###
-
 while read -r line; do
 	comment=`echo "$line" | sed "s/^[ \t]*#.*$//"`
 	[ "$comment" == "" ] && continue
@@ -58,8 +49,14 @@ echo "country	db.txt	wfa	rtk	country full"
 echo "-------	------	---	---	------------"
 
 for key in "${!list_6g[@]}"; do
-	country_full=${alpha2_to_full["$key"]}
-	echo "$key	${list_6g[$key]}	${wfa_6g[$country_full]}	${rtk_6g[$key]}	$country_full"
+	_alpha2=$key
+	_country_full=${alpha2_to_full["$_alpha2"]}
+
+	_6g_db_txt=${list_6g[$_alpha2]}
+	_6g_wfa=${wfa_6g[$_alpha2]}
+	_6g_rtk=${rtk_6g[$_alpha2]}
+
+	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_country_full"
 done | sort
 
 
