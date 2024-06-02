@@ -46,8 +46,18 @@ done < db.txt
 
 [ "$PBAR" == "1" ] && echo ""
 
-echo "country	db.txt	wfa	rtk	CE	country full"
-echo "-------	------	---	---	--	------------"
+
+################ summary
+n_total=0
+n_db_txt=0
+n_wfa=0
+n_rtk=0
+n_lack=0
+n_lab=0
+export n_total n_db_txt n_wfa n_rtk n_lack n_lab
+
+echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full"
+echo "-------	------	---	---	----	---	--	------------"
 
 for key in "${!list_6g[@]}"; do
 	_alpha2=$key
@@ -58,7 +68,31 @@ for key in "${!list_6g[@]}"; do
 	_6g_rtk=${rtk_6g[$_alpha2]}
 	_is_ce=${ce_list[$_alpha2]}
 
-	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_is_ce	$_country_full"
-done | sort
+	_lack_db_txt=
+	_lack_lab_help=
 
+	if [[ "$_6g_wfa" == "1" || "$_6g_rtk" == "1" ]]; then
+		if [ "$_6g_db_txt" != "1" ]; then
+			_lack_db_txt=1
+
+			if [ "$_6g_wfa" == "" ]; then
+				_lack_lab_help=1
+			fi
+		fi
+	fi
+
+	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_lack_db_txt	$_lack_lab_help	$_is_ce	$_country_full"
+
+	n_total=$((n_total + 1))
+	[ "$_6g_db_txt" == "1" ] && n_db_txt=$((n_db_txt + 1))
+	[ "$_6g_wfa" == "1" ] && n_wfa=$((n_wfa + 1))
+	[ "$_6g_rtk" == "1" ] && n_rtk=$((n_rtk + 1))
+	[ "$_lack_db_txt" == "1" ] && n_lack=$((n_lack + 1))
+	[ "$_lack_lab_help" == "1" ] && n_lab=$((n_lab + 1))
+done
+# | sort
+
+echo "-------	------	---	---	----	---	--	------------"
+echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full"
+echo "$n_total	$n_db_txt	$n_wfa	$n_rtk	$n_lack	$n_lab"
 
