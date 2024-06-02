@@ -11,6 +11,7 @@ declare -A list_6g
 . $dir/alpha2.inc.sh 
 . $dir/wfa.inc.sh
 . $dir/rtk.inc.sh
+. $dir/ce.inc.sh
 
 while read -r line; do
 	comment=`echo "$line" | sed "s/^[ \t]*#.*$//"`
@@ -45,8 +46,8 @@ done < db.txt
 
 [ "$PBAR" == "1" ] && echo ""
 
-echo "country	db.txt	wfa	rtk	country full"
-echo "-------	------	---	---	------------"
+echo "country	db.txt	wfa	rtk	CE	country full"
+echo "-------	------	---	---	--	------------"
 
 for key in "${!list_6g[@]}"; do
 	_alpha2=$key
@@ -55,8 +56,9 @@ for key in "${!list_6g[@]}"; do
 	_6g_db_txt=${list_6g[$_alpha2]}
 	_6g_wfa=${wfa_6g[$_alpha2]}
 	_6g_rtk=${rtk_6g[$_alpha2]}
+	_is_ce=${ce_list[$_alpha2]}
 
-	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_country_full"
+	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_is_ce	$_country_full"
 done | sort
 
 
