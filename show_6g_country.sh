@@ -59,7 +59,13 @@ export n_total n_db_txt n_wfa n_rtk n_lack n_lab
 echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full"
 echo "-------	------	---	---	----	---	--	------------"
 
-for key in "${!list_6g[@]}"; do
+# by db.txt
+#countries=`echo "${!list_6g[@]}" | sed "s/ /\n/g" | sort`
+
+# by alpha2
+countries=`echo "${!alpha2_to_full[@]}" | sed "s/ /\n/g" | sort`
+
+for key in $countries; do
 	_alpha2=$key
 	_country_full=${alpha2_to_full["$_alpha2"]}
 
@@ -90,7 +96,6 @@ for key in "${!list_6g[@]}"; do
 	[ "$_lack_db_txt" == "1" ] && n_lack=$((n_lack + 1))
 	[ "$_lack_lab_help" == "1" ] && n_lab=$((n_lab + 1))
 done
-# | sort
 
 echo "-------	------	---	---	----	---	--	------------"
 echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full"
