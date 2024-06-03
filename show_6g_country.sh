@@ -1,6 +1,8 @@
 #!/bin/bash
 
 dir=`dirname $0`
+now=`date +%Y%m%d_%H%M%S`
+output="${dir}/output_${now}.txt"
 
 PBAR=1
 
@@ -56,14 +58,14 @@ n_lack=0
 n_lab=0
 export n_total n_db_txt n_wfa n_rtk n_lack n_lab
 
-echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full"
-echo "-------	------	---	---	----	---	--	------------"
+echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full" | tee -a $output
+echo "-------	------	---	---	----	---	--	------------" | tee -a $output
 
 # by db.txt
-#countries=`echo "${!list_6g[@]}" | sed "s/ /\n/g" | sort`
+countries=`echo "${!list_6g[@]}" | sed "s/ /\n/g" | sort`
 
 # by alpha2
-countries=`echo "${!alpha2_to_full[@]}" | sed "s/ /\n/g" | sort`
+#countries=`echo "${!alpha2_to_full[@]}" | sed "s/ /\n/g" | sort`
 
 for key in $countries; do
 	_alpha2=$key
@@ -87,7 +89,7 @@ for key in $countries; do
 		fi
 	fi
 
-	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_lack_db_txt	$_lack_lab_help	$_is_ce	$_country_full"
+	echo "$_alpha2	$_6g_db_txt	$_6g_wfa	$_6g_rtk	$_lack_db_txt	$_lack_lab_help	$_is_ce	$_country_full" | tee -a $output
 
 	n_total=$((n_total + 1))
 	[ "$_6g_db_txt" == "1" ] && n_db_txt=$((n_db_txt + 1))
@@ -97,7 +99,9 @@ for key in $countries; do
 	[ "$_lack_lab_help" == "1" ] && n_lab=$((n_lab + 1))
 done
 
-echo "-------	------	---	---	----	---	--	------------"
-echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full"
-echo "$n_total	$n_db_txt	$n_wfa	$n_rtk	$n_lack	$n_lab"
+echo "-------	------	---	---	----	---	--	------------" | tee -a $output
+echo "country	db.txt	wfa	rtk	LACK	lab	CE	country full" | tee -a $output
+echo "$n_total	$n_db_txt	$n_wfa	$n_rtk	$n_lack	$n_lab" | tee -a $output
+
+echo "Written to $output as well"
 
